@@ -1,0 +1,53 @@
+/* Header
+ ----------------------------------------------------------------------------- */
+.header {
+    padding: 1.9em 0 1.2em;
+    z-index: 10;
+    position: relative;
+    text-transform: uppercase;
+    color: #f9f5ed;
+    font-family: 'Archivo';
+    // background-color: #ddd;
+    .home & {
+        position: absolute;
+        width: 100%;
+    }
+
+    &__border {
+        border-bottom: 1px solid rgba($color_withe, 0.1);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    &__content {
+        @extend .container_center;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__center {
+        padding-top: 0.6em;
+        padding-bottom: 0.3em;
+        max-width: 16.0625em;
+        text-align: center;
+    }
+
+    &__nav {
+    }
+    a {
+        color: inherit;
+        text-decoration-color: transparent;
+    }
+}
+
+// stiky menu
+.stiky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
